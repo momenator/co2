@@ -1,0 +1,79 @@
+Country,Indicator,Value,units,description
+UK,ECF,  0.28307 ,KWH,Electricity Conversion Factor
+UK,HCF,  0.18746,KWH,Heating Conversion Factor
+UK,EMH,,KM,Electric Vehicle Mini Hybrid
+UK,EME,0.05311,KM,Electric Vehicle Mini Electric
+UK,ESH,0.04368,KM,Electric Vehicle Supermini Hybrid
+UK,ESE,0.04815,KM,Electric Vehicle Supermini Electric
+UK,ELH,0.03581,KM,Electric Vehicle Lower Medium Hybrid
+UK,ELE,0.05898,KM,Electric Vehicle Lower Medium Electric
+UK,EUH,0.04130,KM,Electric Vehicle Upper Medium Hybrid
+UK,EUE,0.04756,KM,Electric Vehicle Upper Medium Electric
+UK,EEH,0.04275,KM,Electric Vehicle Executive Hybrid
+UK,EEE,,KM,Electric Vehicle Executive Electric
+UK,EXH,0.05054,KM,Electric Vehicle Luxury Hybrid
+UK,EXE,0.07173,KM,Electric Vehicle Luxury Electric
+UK,EPH,0.03996,KM,Electric Vehicle Sports Hybrid
+UK,EPE,0.09154,KM,Electric Vehicle Sports Electric
+UK,EDH,0.04916,KM,Electric Vehicle Dual Pose 4x4 Hybrid
+UK,EDE,0.08205,KM,Electric Vehicle Dual Pose 4x4 Electric
+UK,EVH,,KM,Electric Vehicle MPV Hybrid
+UK,EVE,0.06536,KM,Electric Vehicle MPV Electric
+UK,TGE,0.02413,KM,Transmission and Distribution Electricity
+UK,TGH,0.00987,KM,Transmission and Distribution Heating
+UK,TMH,,KM,Transmission and Distribution Electric Vehicle Mini Hybrid
+UK,TME,0.00452,KM,Transmission and Distribution Electric Vehicle Mini Electric
+UK,TSH,0.00372,KM,Transmission and Distribution Electric Vehicle Supermini Hybrid
+UK,TSE,0.00410,KM,Transmission and Distribution Electric Vehicle Supermini Electric
+UK,TLH,0.00306,KM,Transmission and Distribution Electric Vehicle Lower Medium Hybrid
+UK,TLE,0.00503,KM,Transmission and Distribution Electric Vehicle Lower Medium Electric
+UK,TUH,0.00352,KM,Transmission and Distribution Electric Vehicle Upper Medium Hybrid
+UK,TUE,0.00405,KM,Transmission and Distribution Electric Vehicle Upper Medium Electric
+UK,TEH,0.00365,KM,Transmission and Distribution Electric Vehicle Executive Hybrid
+UK,TEE,,KM,Transmission and Distribution Electric Vehicle Executive Electric
+UK,TXH,0.00430,KM,Transmission and Distribution Electric Vehicle Luxury Hybrid
+UK,TXE,0.00612,KM,Transmission and Distribution Electric Vehicle Luxury Electric
+UK,TPH,0.00341,KM,Transmission and Distribution Electric Vehicle Sports Hybrid
+UK,TPE,0.00780,KM,Transmission and Distribution Electric Vehicle Sports Electric
+UK,TDH,0.00419,KM,Transmission and Distribution Electric Vehicle Dual Pose 4x4 Hybrid
+UK,TDE,0.00700,KM,Transmission and Distribution Electric Vehicle Dual Pose 4x4 Electric
+UK,TVH,,KM,Transmission and Distribution Electric Vehicle MPV Hybrid
+UK,TVE,0.00557,KM,Transmission and Distribution Electric Vehicle MPV Electric
+UK,FMD,  0.11096 ,KM,Fuel Vehicle Mini Diesel
+UK,FMP,  0.14114 ,KM,Fuel Vehicle Mini Petrol
+UK,FMH,,KM,Fuel Vehicle Mini Hybrid
+UK,FSD,  0.13725 ,KM,Fuel Vehicle Supermini Diesel
+UK,FSP,  0.15743 ,KM,Fuel Vehicle Supermini Petrol
+UK,FSH,  0.02255,KM,Fuel Vehicle Supermini Hybrid
+UK,FLD,  0.15048 ,KM,Fuel Vehicle Lower Medium Diesel
+UK,FLP,  0.18284 ,KM,Fuel Vehicle Lower Medium Petrol
+UK,FLH,  0.06675,KM,Fuel Vehicle Lower Medium Hybrid
+UK,FUD,  0.16849 ,KM,Fuel Vehicle Upper Medium Diesel
+UK,FUP,  0.20956 ,KM,Fuel Vehicle Upper Medium Petrol
+UK,FUH,  0.07362,KM,Fuel Vehicle Upper Medium Hybrid
+UK,FED,  0.18125 ,KM,Fuel Vehicle Executive Diesel
+UK,FEP,  0.23952 ,KM,Fuel Vehicle Executive Petrol
+UK,FEH,,KM,Fuel Vehicle Executive Petrol
+UK,FXD,  0.22177 ,KM,Fuel Vehicle Luxury Diesel
+UK,FXP,  0.33702 ,KM,Fuel Vehicle Luxury Petrol
+UK,FXH,  0.10494,KM,Fuel Vehicle Luxury Hybrid
+UK,FPD,  0.17521 ,KM,Fuel Vehicle Sports Diesel
+UK,FPP,  0.24626 ,KM,Fuel Vehicle Sports Petrol
+UK,FPH,  0.0804 ,KM,Fuel Vehicle Sports Hybrid
+UK,FDD,  0.21194 ,KM,Fuel Vehicle Dual Pose 4x4 Diesel
+UK,FDP,  0.24684 ,KM,Fuel Vehicle Dual Pose 4x4 Petrol
+UK,FDH,  0.07593,KM,Fuel Vehicle Dual Pose 4x4 Hybrid
+UK,FVD,  0.18452 ,KM,Fuel Vehicle MPV Diesel
+UK,FVP,  0.20096 ,KM,Fuel Vehicle MPV Patrol
+UK,FVH,,KM,Fuel Vehicle MPV Hybrid
+UK,ATD,  0.15777 ,KM,Air Travel Domestic
+UK,ATS,  0.08584 ,KM,Air Travel Short-haul
+UK,ATL,  0.11237 ,KM,Air Travel Long-haul
+UK,ATI,  0.09663 ,KM,Air Travel International
+UK,WTS,  0.344   ,CBM,Water Supply
+UK,WTT,  0.708      ,CBM,Water Treatment
+UK,NRN,  0.04424 ,KM,Rail National Rail
+UK,RIR,  0.01226 ,KM,International Rail
+UK,RLT,  0.03967 ,KM,Light Rail and Tram
+UK,RUG,  0.0376  ,KM,Rail Underground
+UK,BAB,  0.10097 ,KM,Bus Average Local Bus
