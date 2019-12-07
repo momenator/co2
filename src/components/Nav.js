@@ -33,14 +33,17 @@ const Nav = () => {
       <BottomNavigationAction label="Home" 
         component={Link}
         to="/"
+        icon={<RestoreIcon/>}
       />
       <BottomNavigationAction label="About"
         component={Link}
         to="/about"
+        icon={<RestoreIcon/>}
       />
       <BottomNavigationAction label="Users"
         component={Link}
         to="/users"
+        icon={<RestoreIcon/>}
       />
     </BottomNavigation>
   );
