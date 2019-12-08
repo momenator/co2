@@ -21,6 +21,15 @@ const computeCo2 = (choice) => {
   if (choice === 'orange') {
     return 0.5 * 0.131;
   }
+  if (choice === 'pizza') {
+    return 0.644;
+  }
+  if (choice === 'sandwich') {
+    return 2.889;
+  }
+  if (choice === 'hot dog') {
+    return 2.778;
+  }
   return 0;
 }
 
