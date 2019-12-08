@@ -8,7 +8,7 @@ import Card from '@material-ui/core/Card';
 import { DatePicker } from "@material-ui/pickers";
 import moment from 'moment';
 import { useSnackbar } from 'notistack';
-import ComboBox from './ComboBox';
+import AutoComp from './AutoComp';
 import { addUserData } from '../lib/data';
 
 const opts = ['heating', 'electricity', 'water'];
@@ -80,7 +80,7 @@ const Utility = () => {
   const canAdd = !!computedVal && computedVal > 0 && !!unit && !!date;
 
   return <div style={{ padding: 10 }}>
-    <ComboBox items={opts} setValue={setChoice} label="Source"/>
+    <AutoComp items={opts} setValue={setChoice} label="Source"/>
     <TextField
       label="Value"
       id="outlined-start-adornment"

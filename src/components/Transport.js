@@ -7,7 +7,7 @@ import Card from '@material-ui/core/Card';
 import { DatePicker } from "@material-ui/pickers";
 import moment from 'moment';
 import { useSnackbar } from 'notistack';
-import ComboBox from './ComboBox';
+import AutoComp from './AutoComp';
 import { transport as transportData } from '../data/transport';
 import Button from './Button';
 import { addUserData } from '../lib/data';
@@ -73,7 +73,7 @@ const Transport = () => {
   const canAdd = !!computedVal && computedVal > 0 && !!unit && !!date;
 
   return <div style={{ padding: 10 }}>
-    <ComboBox items={opts} setValue={setChoice} label="Mode of Transport"/>
+    <AutoComp items={opts} setValue={setChoice} label="Mode of Transport"/>
     <TextField
       label="Distance"
       id="outlined-start-adornment"

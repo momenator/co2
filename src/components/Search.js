@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import GridDisplay from './GridDisplay';
-import ComboBox from './ComboBox';
+import AutoComp from './AutoComp';
 import { products } from '../data/products';
 
 const filterItems = (filter, items) => {
@@ -16,7 +16,7 @@ const Search = () => {
 
   return <div style={{ height: '100vh', overflowY: 'hidden' }}>
     <div style={{ padding: 10 }}>
-      <ComboBox items={items.map(it => it.name)} setValue={changeFilter} />
+      <AutoComp items={items.map(it => it.name)} setValue={changeFilter} />
     </div>
     <div style={{padding: 10, height: '80%', overflow: 'scroll' }}>
       <GridDisplay 
