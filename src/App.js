@@ -16,6 +16,7 @@ import Nav from './components/Nav';
 import Home from './components/Home';
 import Footprint from './components/Footprint';
 import CameraComponent from './components/Camera';
+import Wait from './components/Wait';
 import './App.css';
 
 
@@ -31,7 +32,7 @@ function App() {
                   <Footprint />
                 </Route>
                 <Route path="/search">
-                  <div>Search</div>
+                  <Wait />
                 </Route>
                 <Route path="/camera">
                   <CameraComponent />
