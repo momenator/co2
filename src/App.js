@@ -10,7 +10,6 @@ import DateFnsUtils from '@date-io/date-fns';
 import { SnackbarProvider } from 'notistack';
 import Nav from './components/Nav';
 import Home from './components/Home';
-import Search from './components/Search';
 import Footprint from './components/Footprint';
 import CameraComponent from './components/Camera';
 import './App.css';
@@ -28,7 +27,7 @@ function App() {
                   <Footprint />
                 </Route>
                 <Route path="/search">
-                  <Search />
+                  <div>Search</div>
                 </Route>
                 <Route path="/camera">
                   <CameraComponent />
