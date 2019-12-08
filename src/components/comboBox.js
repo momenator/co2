@@ -25,5 +25,4 @@ ComboBox.defaultProps = {
   label: 'Search'
 }
 
-
 export default ComboBox;
