@@ -76,8 +76,8 @@ export default function Footprint() {
           aria-label="full width tabs example"
         >
           <Tab icon={<CommuteIcon/>} label="Transport" {...a11yProps(0)} />
-          <Tab icon={<OfflineBoltIcon/>} label="Energy" {...a11yProps(1)} />
-          <Tab icon={<ShoppingBasketIcon/>} label="Product" {...a11yProps(2)} />
+          <Tab icon={<OfflineBoltIcon/>} label="Utilities" {...a11yProps(1)} />
+          <Tab icon={<ShoppingBasketIcon/>} label="Lifestyle" {...a11yProps(2)} />
         </Tabs>
       </AppBar>
       <SwipeableViews
