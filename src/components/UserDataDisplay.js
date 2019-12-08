@@ -2,6 +2,8 @@ import React from 'react';
 import GridDisplay from './GridDisplay';
 import Card from '@material-ui/core/Card';
 import { getUserData } from '../lib/data';
+import plot1 from '../data/pics/plot1.png';
+
 
 import CarIcon from '@material-ui/icons/DriveEta';
 import TaxiIcon from '@material-ui/icons/LocalTaxi';
@@ -93,11 +95,13 @@ const UserDataDisplay = () => {
   const percentageDiff = 100 * Math.abs(1 - (totVal / 541.45)).toFixed(2);
 
   return <div>
-    <Card style={{ marginTop: 10, marginBottom: 10 }}>
-      <h3> Total kg CO<sub>2</sub>e: { totVal }</h3>
+    <Card style={{ marginTop: 15, marginBottom: 15 }}>
+      <h2> Your total kg CO<sub>2</sub>e: { totVal }</h2>
     </Card>
 
-    <Card style={{ marginTop: 10, marginBottom: 10 }}>
+    <img STYLE="position:variable; TOP:300; margin;center WIDTH:400px;" src={plot1} alt="Logo" />
+
+    <Card style={{ marginTop: 30, marginBottom: 50 }}>
       <h3>Country Avg kg CO<sub>2</sub>e: { 541.45 }</h3>
       <p>Your CO<sub>2</sub> emission is { isLower ? 'lower' : 'higher' } by <bold>{percentageDiff}%</bold></p>
     </Card>
