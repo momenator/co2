@@ -28,9 +28,11 @@ const CameraComponent = () => {
   const [dataUri, setDataUri] = useState(null);
   const [stream, setStream] = useState(null);
   const [objClass, setObjClass] = useState(null);
+  const [loading, setLoading] = useState(false);
   const { enqueueSnackbar } = useSnackbar();
 
   async function handleTakePhotoAnimationDone (dataUri) {
+    setLoading(true);
     setDataUri(dataUri);
     const img = document.getElementById('image-feed');
     const model = await cocoSsd.load();
@@ -43,6 +45,7 @@ const CameraComponent = () => {
     if (predictions.length > 0) {
       setObjClass(predictions[0].class);
     }
+    setLoading(false);
   }
 
   function handleCameraStart (stream) {
@@ -71,6 +74,9 @@ const CameraComponent = () => {
         </Card>
       }
       {
+        loading && <div> loading... </div>
+      }
+      {
         objClass && <Button onClick={() => {
           addUserData({ 
             unit: 'kg',
@@ -87,7 +93,8 @@ const CameraComponent = () => {
           position: 'fixed', top: 0, right: 0, padding: 20, color: 'white' 
         }}
         fontSize="large" onClick={() => {
-        setDataUri(null)
+        setDataUri(null);
+        setObjClass(null);
       }}/>
     </div>
   );
