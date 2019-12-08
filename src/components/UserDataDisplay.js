@@ -58,6 +58,8 @@ const Icon = ({ choice }) => {
   return <div></div>;
 }
 
+const MCube = () => <span>m<sup>3</sup></span>;
+
 const choiceLevel = (choice) => {
   choice = choice.toLowerCase();
   if (isCar(choice) || isPlane(choice) || isTaxi(choice)) {
@@ -73,7 +75,7 @@ const WrappedData = (data) => {
     <div style={{ flex: 1, color: 'white', backgroundColor: choiceLevel(data.choice) }}>
       <Icon choice={data.choice} /></div>
     <div style={textStyle}>{data.computedValue} co<sub>2</sub>e</div>
-    <div style={textStyle}>{data.rawValue} {data.unit}</div>
+    <div style={textStyle}>{data.rawValue} { data.unit === 'm^3' ? <MCube/> : data.unit }</div>
   </div>;
 }
 

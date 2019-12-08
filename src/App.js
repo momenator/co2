@@ -12,6 +12,7 @@ import Nav from './components/Nav';
 import Home from './components/Home';
 import Search from './components/Search';
 import Footprint from './components/Footprint';
+import CameraComponent from './components/Camera';
 import './App.css';
 
 
@@ -28,6 +29,9 @@ function App() {
                 </Route>
                 <Route path="/search">
                   <Search />
+                </Route>
+                <Route path="/camera">
+                  <CameraComponent />
                 </Route>
                 <Route path="/">
                   <Home/>
