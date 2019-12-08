@@ -21,11 +21,11 @@ const calculateUtilCo2 = (choice, num) => {
   const smallChoice = choice.toLowerCase();
   num = Number(num);
   if (smallChoice.includes('electric')) {
-    return Number(num * 0.28307).toFixed(3);
+    return Number(num * 0.28307).toFixed(2)(3);
   } else if (smallChoice.includes('heat')) {
-    return Number(num * 0.18746).toFixed(3);
+    return Number(num * 0.18746).toFixed(2)(3);
   } else if (smallChoice.includes('water')) {
-    return Number((num * 0.344) + (num * 0.708)).toFixed(3);
+    return Number((num * 0.344) + (num * 0.708)).toFixed(2)(3);
   }
   return 0;
 }

@@ -23,10 +23,15 @@
     "react-swipeable-views": "^0.13.3"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "node server.js #Production only!",
+    "postinstall": "npm run build",
+    "dev": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
+  },
+  "engines": {
+    "node": "11.x"
   },
   "eslintConfig": {
     "extends": "react-app"

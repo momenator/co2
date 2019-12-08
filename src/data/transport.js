@@ -1,5 +1,5 @@
-const luxury = ["mercedes", "porsche", "lambo", "lambhorghini"];
-const publicTransport = ['train'];
+// const luxury = ["mercedes", "porsche", "lambo", "lambhorghini"];
+// const publicTransport = ['train'];
 
 export const transport = [
   {

@@ -10,7 +10,7 @@ import { useSnackbar } from 'notistack';
 import ComboBox from './ComboBox';
 import { transport as transportData } from '../data/transport';
 import Button from './Button';
-import { getUserData, addUserData } from '../lib/data';
+import { addUserData } from '../lib/data';
 
 
 const opts = transportData.map(t => t.description);
@@ -26,7 +26,7 @@ const calculateUtilCo2 = (choice, num) => {
     .find(t => t.description.toLocaleLowerCase() === smallChoice);
 
   if (tData && tData.value) {
-    return Number(num * Number(tData.value)).toFixed(3);
+    return Number(num * Number(tData.value)).toFixed(2)(3);
   }
 
   return 0;

@@ -14,7 +14,7 @@ import ElectricIcon from '@material-ui/icons/FlashOn';
 import WaterIcon from '@material-ui/icons/Waves';
 
 const textStyle = { 
-  flex: 2, paddingTop: 10, fontSize: 20, fontWeight: 'bold' };
+  flex: 2, paddingTop: 10, fontSize: 16, fontWeight: 'bold' };
 
 const isSubway = (choice) => choice.toLowerCase().includes('underground');
 const isTram = (choice) => choice.toLowerCase().includes('tram');
@@ -28,13 +28,15 @@ const isCar = (choice) => {
 }
 
 const isHeat = (choice) => choice.toLowerCase().includes('heat');
-const isElectric = (choice) => choice.toLowerCase().includes('electric');
+const isElectric = (choice) => choice.toLowerCase().includes('electricity');
 const isWater = (choice) => choice.toLowerCase().includes('water');
 
 
 const Icon = ({ choice }) => {
   choice = choice.toLowerCase();
-  if (isCar(choice)) {
+  if (isElectric(choice)) {
+    return <ElectricIcon fontSize="large"/>
+  } else if (isCar(choice)) {
     return <CarIcon fontSize="large"/>;
   } else if (isPlane(choice)) {
     return <PlaneIcon fontSize="large"/>;
@@ -50,8 +52,6 @@ const Icon = ({ choice }) => {
     return <TaxiIcon fontSize="large"/>;
   } else if (isHeat(choice)) {
     return <FireIcon fontSize="large"/>
-  } else if (isElectric(choice)) {
-    return <ElectricIcon fontSize="large"/>
   } else if (isWater(choice)) {
     return <WaterIcon fontSize="large"/>
   }
@@ -63,24 +63,32 @@ const MCube = () => <span>m<sup>3</sup></span>;
 const choiceLevel = (choice) => {
   choice = choice.toLowerCase();
   if (isCar(choice) || isPlane(choice) || isTaxi(choice)) {
-    return 'red';
+    return '#8CE082';
   } else if (isTram(choice) || isSubway(choice) || isTrain(choice) || isBus(choice)) {
-    return 'green';
+    return '#063A06';
   } 
   return 'grey';
+}
+
+const totalVal = () => {
+  const computedVals = getUserData()
+    .map(d => Number(d.computedValue)).reduce((a, b) => a + b, 0);
+  return computedVals.toFixed(2);
 }
 
 const WrappedData = (data) => {
   return <div style={{ display: 'flex', flexWrap: 'nowrap' }}>
     <div style={{ flex: 1, color: 'white', backgroundColor: choiceLevel(data.choice) }}>
       <Icon choice={data.choice} /></div>
-    <div style={textStyle}>{data.computedValue} co<sub>2</sub>e</div>
-    <div style={textStyle}>{data.rawValue} { data.unit === 'm^3' ? <MCube/> : data.unit }</div>
+    <div style={textStyle}>{data.computedValue} kg CO<sub>2</sub>e</div>
+    <div style={{ ...textStyle, flex:1 }}>{data.rawValue} { data.unit === 'm^3' ? <MCube/> : data.unit }</div>
   </div>;
 }
 
 const UserDataDisplay = () => {
+  totalVal();
   return <div>
+    <div>Total kg CO<sub>2</sub>e: { totalVal() }</div>
     <GridDisplay items={getUserData().map(d => WrappedData(d))} spacing={1} itemsPerRow={1} />
   </div>
 }
