@@ -1,5 +1,6 @@
 import React from 'react';
 import GridDisplay from './GridDisplay';
+import Card from '@material-ui/core/Card';
 import { getUserData } from '../lib/data';
 
 import CarIcon from '@material-ui/icons/DriveEta';
@@ -86,9 +87,20 @@ const WrappedData = (data) => {
 }
 
 const UserDataDisplay = () => {
-  totalVal();
+  const totVal = totalVal();
+  const isLower = totVal < 541.45;
+  const percentageDiff = 100 * Math.abs(1 - (totVal / 541.45)).toFixed(2);
+
   return <div>
-    <div>Total kg CO<sub>2</sub>e: { totalVal() }</div>
+    <Card style={{ marginTop: 10, marginBottom: 10 }}>
+      <h3> Total kg CO<sub>2</sub>e: { totVal }</h3>
+    </Card>
+
+    <Card style={{ marginTop: 10, marginBottom: 10 }}>
+      <h3>Country Avg kg CO<sub>2</sub>e: { 541.45 }</h3>
+      <p>Your CO<sub>2</sub> emission is { isLower ? 'lower' : 'higher' } by <bold>{percentageDiff}%</bold></p>
+    </Card>
+
     <GridDisplay items={getUserData().map(d => WrappedData(d))} spacing={1} itemsPerRow={1} />
   </div>
 }
