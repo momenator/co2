@@ -92,7 +92,7 @@ export default function Footprint() {
           <Utility />
         </TabPanel>
         <TabPanel value={value} index={2} dir={theme.direction}>
-          To do
+          <h4>Prepare your meal and click the camera button</h4>
         </TabPanel>
       </SwipeableViews>
     </div>

@@ -13,6 +13,7 @@ import SubwayIcon from '@material-ui/icons/Subway';
 import FireIcon from '@material-ui/icons/Whatshot';
 import ElectricIcon from '@material-ui/icons/FlashOn';
 import WaterIcon from '@material-ui/icons/Waves';
+import FastfoodIcon from '@material-ui/icons/Fastfood';
 
 const textStyle = { 
   flex: 2, paddingTop: 10, fontSize: 16, fontWeight: 'bold' };
@@ -56,7 +57,7 @@ const Icon = ({ choice }) => {
   } else if (isWater(choice)) {
     return <WaterIcon fontSize="large"/>
   }
-  return <div></div>;
+  return <FastfoodIcon fontSize="large"/>;
 }
 
 const MCube = () => <span>m<sup>3</sup></span>;
@@ -66,7 +67,7 @@ const choiceLevel = (choice) => {
   if (isCar(choice) || isPlane(choice) || isTaxi(choice)) {
     return '#8CE082';
   } else if (isTram(choice) || isSubway(choice) || isTrain(choice) || isBus(choice)) {
-    return '#063A06';
+    return '#2EB01F';
   } 
   return 'grey';
 }
