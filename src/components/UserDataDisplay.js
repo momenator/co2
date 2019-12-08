@@ -99,7 +99,7 @@ const UserDataDisplay = () => {
       <h2> Your total kg CO<sub>2</sub>e: { totVal }</h2>
     </Card>
 
-    <img STYLE="position:variable; TOP:300; margin;center WIDTH:400px;" src={plot1} alt="Logo" />
+    <img style={{ width: '90%' }} src={plot1} alt="Logo" />
 
     <Card style={{ marginTop: 30, marginBottom: 50 }}>
       <h3>Country Avg kg CO<sub>2</sub>e: { 541.45 }</h3>
