@@ -26,7 +26,7 @@ const calculateUtilCo2 = (choice, num) => {
     .find(t => t.description.toLocaleLowerCase() === smallChoice);
 
   if (tData && tData.value) {
-    return Number(num * Number(tData.value)).toFixed(2)(3);
+    return Number(num * Number(tData.value)).toFixed(2);
   }
 
   return 0;

@@ -46,7 +46,9 @@ const CameraComponent = () => {
       }
       <div>Class :{objClass} </div>
       <RotateLeftIcon 
-        style={{ position: 'fixed', top: 0, right: 0, padding: 20 }}
+        style={{ 
+          position: 'fixed', top: 0, right: 0, padding: 20, color: 'white' 
+        }}
         fontSize="large" onClick={() => {
         setDataUri(null)
       }}/>
