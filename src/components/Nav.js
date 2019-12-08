@@ -5,7 +5,11 @@ import {
 import { makeStyles } from '@material-ui/core/styles';
 import BottomNavigation from '@material-ui/core/BottomNavigation';
 import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
-import RestoreIcon from '@material-ui/icons/Restore';
+import DashboardIcon from '@material-ui/icons/Dashboard';
+import AssessmentIcon from '@material-ui/icons/Assessment';
+import DirectionsRunIcon from '@material-ui/icons/DirectionsRun';
+import SearchIcon from '@material-ui/icons/Search';
+
 // import FavoriteIcon from '@material-ui/icons/Favorite';
 // import LocationOnIcon from '@material-ui/icons/LocationOn';
 
@@ -33,17 +37,22 @@ const Nav = () => {
       <BottomNavigationAction label="Home" 
         component={Link}
         to="/"
-        icon={<RestoreIcon/>}
+        icon={<DashboardIcon/>}
       />
-      <BottomNavigationAction label="About"
+      <BottomNavigationAction label="Footprint"
         component={Link}
-        to="/about"
-        icon={<RestoreIcon/>}
+        to="/footprint"
+        icon={<AssessmentIcon/>}
       />
-      <BottomNavigationAction label="Users"
+      <BottomNavigationAction label="Search"
         component={Link}
-        to="/users"
-        icon={<RestoreIcon/>}
+        to="/search"
+        icon={<SearchIcon/>}
+      />
+      <BottomNavigationAction label="Challenges"
+        component={Link}
+        to="/challenges"
+        icon={<DirectionsRunIcon />}
       />
     </BottomNavigation>
   );
